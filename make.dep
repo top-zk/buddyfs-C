@@ -1,0 +1,12 @@
+-ansi
+-Wall
+-g3
+-MM
+Buddy.cpp
+Clique.cpp
+drm.cpp
+FileSystem.cpp
+Listener.cpp
+Packet.cpp
+Request.cpp
+Socket.cpp

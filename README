@@ -1,0 +1,28 @@
+You will need the following library dev files to get this to compile:
+	-FUSE (fuse.sf.net)
+	-Filesytem Extended Attributes (libattr)
+	-SSL (libssl)
+
+In order to get it to actually work, you will have to run it in debug 
+mode:
+
+$ BuddyFS -d /tmp/buddy
+
+It WILL NOT WORK correctly outside of debug mode.
+
+The application will also ask you for a username/pass, so you'll have to 
+set up the drm config file:
+
+$ mkdir /etc/buddy
+$ cp drm.conf /etc/buddy/drm.conf
+
+Also, before you start, you will want to make sure fuse is loaded:
+
+$ modprobe fuse
+
+Once started, if you don't have a /etc/buddy/nodes.lst file with an ip 
+address, a space, and a port number it should ask you for one. Same 
+format with that.
+
+If you have major problems, you can contact us at rcarback@sf.net and 
+bpass@sf.net.
